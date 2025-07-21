@@ -12,7 +12,7 @@ namespace Padarosa.Model
     {
         // Nas linhas abaixo você poderá mudar as informações da conexão com o bd:
         private const string SERVER = "localhost", // ip/domínio do servidor
-                             PORT = "3306",
+                             PORT = "49170",
                              DATABASE = "padarosa",
                              UID = "root",
                              PWD = "";

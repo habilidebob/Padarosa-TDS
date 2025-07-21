@@ -43,7 +43,7 @@
             // 
             this.pictureBox1.Image = global::Padarosa.Properties.Resources.baker;
             this.pictureBox1.Location = new System.Drawing.Point(32, 61);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(193, 252);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -69,6 +69,7 @@
             this.btnProdutos.TabIndex = 2;
             this.btnProdutos.Text = "Gestão de Produtos";
             this.btnProdutos.UseVisualStyleBackColor = true;
+            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
             // 
             // btnComandas
             // 
@@ -79,6 +80,7 @@
             this.btnComandas.TabIndex = 3;
             this.btnComandas.Text = "Lançamento de Comandas";
             this.btnComandas.UseVisualStyleBackColor = true;
+            this.btnComandas.Click += new System.EventHandler(this.btnComandas_Click);
             // 
             // btnCaixa
             // 
@@ -89,6 +91,7 @@
             this.btnCaixa.TabIndex = 4;
             this.btnCaixa.Text = "Caixa";
             this.btnCaixa.UseVisualStyleBackColor = true;
+            this.btnCaixa.Click += new System.EventHandler(this.btnCaixa_Click);
             // 
             // btnUsuarios
             // 
@@ -99,6 +102,7 @@
             this.btnUsuarios.TabIndex = 5;
             this.btnUsuarios.Text = "Gestão de Usuários";
             this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // lblUsuarios
             // 
@@ -125,7 +129,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Square721 BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FormMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
