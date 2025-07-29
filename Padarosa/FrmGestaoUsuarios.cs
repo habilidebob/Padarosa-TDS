@@ -87,7 +87,7 @@ namespace Padarosa
                 MessageBox.Show("Nome informado vazio ou inválido!", "Erro!",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (txbEditarSenha.Text.Length < 6)
+            else if (txbEditarSenha.Text.Length >=1 && txbEditarSenha.Text.Length < 6)
             {
                 MessageBox.Show("A senha deve ter no mínimo 6 caracteres!", "Erro!",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -95,9 +95,30 @@ namespace Padarosa
             else
             {
                 // Inicia a edição no bd:
-                // implementar a edição *****
+                // Obter os valores dos txbs de editar:
+                this.usuario.NomeCompleto = txbEditarNome.Text;
+                this.usuario.Email = txbEditarEmail.Text;
+                this.usuario.Senha = txbEditarSenha.Text;
 
-                AtualizarDgv();
+                // Executar o .Modificar():
+                if (this.usuario.Modificar())
+                {
+                    MessageBox.Show("Usuário modificado com sucesso!",
+                        "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    AtualizarDgv();
+
+                    // Limpar o campos e desabilitar os grbs:
+                    grbApagar.Enabled = false;
+                    grbEdicao.Enabled = false;
+                    txbEditarEmail.Clear();
+                    txbEditarSenha.Clear();
+                    txbEditarNome.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("Falha ao modificar o usuário!", "Erro!",
+                       MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
