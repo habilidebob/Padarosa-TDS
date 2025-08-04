@@ -33,13 +33,13 @@
             this.lblApagar = new System.Windows.Forms.Label();
             this.grbCadastro = new System.Windows.Forms.GroupBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.txbCadastroCategoria = new System.Windows.Forms.TextBox();
             this.lblCadastroSenha = new System.Windows.Forms.Label();
             this.txbCadastroPreco = new System.Windows.Forms.TextBox();
             this.lblCadastroPreco = new System.Windows.Forms.Label();
             this.txbCadastroNome = new System.Windows.Forms.TextBox();
             this.lblCadastroNome = new System.Windows.Forms.Label();
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
+            this.cmbCategoriasCadastrar = new System.Windows.Forms.ComboBox();
             this.grbApagar.SuspendLayout();
             this.grbCadastro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
@@ -79,8 +79,8 @@
             // 
             // grbCadastro
             // 
+            this.grbCadastro.Controls.Add(this.cmbCategoriasCadastrar);
             this.grbCadastro.Controls.Add(this.btnCadastrar);
-            this.grbCadastro.Controls.Add(this.txbCadastroCategoria);
             this.grbCadastro.Controls.Add(this.lblCadastroSenha);
             this.grbCadastro.Controls.Add(this.txbCadastroPreco);
             this.grbCadastro.Controls.Add(this.lblCadastroPreco);
@@ -103,13 +103,6 @@
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
-            // 
-            // txbCadastroCategoria
-            // 
-            this.txbCadastroCategoria.Location = new System.Drawing.Point(145, 87);
-            this.txbCadastroCategoria.Name = "txbCadastroCategoria";
-            this.txbCadastroCategoria.Size = new System.Drawing.Size(212, 20);
-            this.txbCadastroCategoria.TabIndex = 5;
             // 
             // lblCadastroSenha
             // 
@@ -166,6 +159,14 @@
             this.dgvProdutos.Size = new System.Drawing.Size(771, 318);
             this.dgvProdutos.TabIndex = 9;
             // 
+            // cmbCategoriasCadastrar
+            // 
+            this.cmbCategoriasCadastrar.FormattingEnabled = true;
+            this.cmbCategoriasCadastrar.Location = new System.Drawing.Point(145, 87);
+            this.cmbCategoriasCadastrar.Name = "cmbCategoriasCadastrar";
+            this.cmbCategoriasCadastrar.Size = new System.Drawing.Size(212, 21);
+            this.cmbCategoriasCadastrar.TabIndex = 7;
+            // 
             // FrmGestaoProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,12 +193,12 @@
         private System.Windows.Forms.Label lblApagar;
         private System.Windows.Forms.GroupBox grbCadastro;
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.TextBox txbCadastroCategoria;
         private System.Windows.Forms.Label lblCadastroSenha;
         private System.Windows.Forms.TextBox txbCadastroPreco;
         private System.Windows.Forms.Label lblCadastroPreco;
         private System.Windows.Forms.TextBox txbCadastroNome;
         private System.Windows.Forms.Label lblCadastroNome;
         private System.Windows.Forms.DataGridView dgvProdutos;
+        private System.Windows.Forms.ComboBox cmbCategoriasCadastrar;
     }
 }
