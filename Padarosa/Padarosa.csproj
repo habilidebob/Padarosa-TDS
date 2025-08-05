@@ -130,6 +130,9 @@
     <EmbeddedResource Include="FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCaixa.resx">
+      <DependentUpon>FrmCaixa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmComandas.resx">
       <DependentUpon>FrmComandas.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +171,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\baker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash-register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

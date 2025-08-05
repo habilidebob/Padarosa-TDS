@@ -34,3 +34,4 @@ C:\Users\estevao.roliveira\source\repos\Padarosa\Padarosa\bin\Debug\EasyEncrypti
 C:\Users\estevao.roliveira\source\repos\Padarosa\Padarosa\obj\Debug\Padarosa.FrmGestaoUsuarios.resources
 C:\Users\estevao.roliveira\source\repos\Padarosa\Padarosa\obj\Debug\Padarosa.FrmGestaoProdutos.resources
 C:\Users\estevao.roliveira\source\repos\Padarosa\Padarosa\obj\Debug\Padarosa.FrmComandas.resources
+C:\Users\estevao.roliveira\source\repos\Padarosa\Padarosa\obj\Debug\Padarosa.FrmCaixa.resources

@@ -64,6 +64,19 @@ namespace Padarosa
 
         }
 
+        public void ResetarCampos()
+        {
+            
+            grbInfos.Enabled = true;
+            grbLancamento.Enabled = false;
+
+            // Limpar os campos:
+            txbComanda.Clear();
+            txbNome.Clear();
+            txbProduto.Clear();
+            txbQuantidade.Clear();
+        }
+
         private void btnLancar_Click(object sender, EventArgs e)
         {
             if (txbQuantidade.Text == "")
@@ -74,7 +87,8 @@ namespace Padarosa
             else
             {
                 DialogResult r = MessageBox.Show($"Tem certeza que deseja lançar " +
-                    $"{txbQuantidade.Text} unidades de {txbNome.Text} na comanda {txbComanda.Text}?");
+                    $"{txbQuantidade.Text} unidades de {txbNome.Text} na comanda {txbComanda.Text}?",
+                    "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 
                 // Se "sim":
                 if (r == DialogResult.Yes)
@@ -88,6 +102,8 @@ namespace Padarosa
                     {
                         MessageBox.Show("Lançamento efetuado com sucesso!",
                             "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Limpar os campos:
+                        ResetarCampos();
                     }
                     else
                     {
@@ -98,8 +114,14 @@ namespace Padarosa
                 else
                 {
                     // Resetar os compos
+                    ResetarCampos();
                 }
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            ResetarCampos();
         }
     }
 }
